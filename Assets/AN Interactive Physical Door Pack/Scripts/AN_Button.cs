@@ -65,8 +65,10 @@ public class AN_Button : MonoBehaviour
 
     public void TryAction()
     {
-        if (Locked || isValve || DoorObject == null || DoorObject.Remote)
+        Debug.Log("test1");
+        if (Locked || isValve || DoorObject == null || !DoorObject.Remote)
             return;
+        Debug.Log("test2");
         DoorObject.Action();
     }
 

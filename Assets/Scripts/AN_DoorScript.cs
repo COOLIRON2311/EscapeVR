@@ -19,7 +19,6 @@ public class AN_DoorScript : MonoBehaviour
     public bool RedLocked = false;
     public bool BlueLocked = false;
     [Tooltip("It is used for key script working")]
-    AN_HeroInteractive HeroInteractive;
     [Space]
     public bool isOpened = false;
     [Range(0f, 4f)]

@@ -377,6 +377,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5347877478075188811, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
+      propertyPath: m_OnValueChange.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347877478075188811, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
+      propertyPath: m_OnValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347877478075188811, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
+      propertyPath: m_OnValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1557863327}
+    - target: {fileID: 5347877478075188811, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
+      propertyPath: m_OnValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347877478075188811, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
+      propertyPath: m_OnValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateRamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347877478075188811, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
+      propertyPath: m_OnValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AN_Button, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347877478075188811, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
+      propertyPath: m_OnValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8025324976199497260, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
       propertyPath: max
       value: 3
@@ -401,6 +429,26 @@ PrefabInstance:
       propertyPath: ValveSpeed
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 8326034110500650338, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
+      propertyPath: max
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8326034110500650338, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8326034110500650338, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
+      propertyPath: xRotation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8326034110500650338, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
+      propertyPath: yPosition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8326034110500650338, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
+      propertyPath: RampObject
+      value: 
+      objectReference: {fileID: 1032727362916197333}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -727,6 +775,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &648271997 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8326034110500650338, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
+  m_PrefabInstance: {fileID: 8025324976694306028}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 354a378e82f9d224d8c66706ecf4f493, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &674511997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1625,6 +1684,17 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1557863327 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8326034110500650338, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
+  m_PrefabInstance: {fileID: 398654252}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 354a378e82f9d224d8c66706ecf4f493, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1624966055
 GameObject:
   m_ObjectHideFlags: 0
@@ -2912,6 +2982,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4021467230806756047, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347877478075188811, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
+      propertyPath: m_OnValueChange.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347877478075188811, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
+      propertyPath: m_OnValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347877478075188811, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
+      propertyPath: m_OnValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 648271997}
+    - target: {fileID: 5347877478075188811, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
+      propertyPath: m_OnValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347877478075188811, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
+      propertyPath: m_OnValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateRamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347877478075188811, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
+      propertyPath: m_OnValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AN_Button, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347877478075188811, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
+      propertyPath: m_OnValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8025324976199497260, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
       propertyPath: speed
       value: 20
@@ -2924,6 +3026,10 @@ PrefabInstance:
       propertyPath: ValveSpeed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 8326034110500650338, guid: ed77bee00f19eb7419ea483b781779b6, type: 3}
+      propertyPath: RampObject
+      value: 
+      objectReference: {fileID: 1215221536972876638}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2934,7 +3040,9 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 6200662137301797188}
+  - {fileID: 5809220570370852271}
   - {fileID: 515261214}
+  - {fileID: 7259399235005842540}
   - {fileID: 1037142152}
   - {fileID: 132657637220755879}
   - {fileID: 2745907580698528869}
@@ -2943,9 +3051,7 @@ SceneRoots:
   - {fileID: 398654252}
   - {fileID: 3251080967126553555}
   - {fileID: 5620097161135917721}
-  - {fileID: 5809220570370852271}
   - {fileID: 1187594671}
   - {fileID: 1624966056}
   - {fileID: 637871481}
-  - {fileID: 7259399235005842540}
   - {fileID: 674511997}

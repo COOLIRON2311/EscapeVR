@@ -30,17 +30,15 @@ public class AN_Button : MonoBehaviour
     [Tooltip("True for vertical movenment by valve (if xRotation is false)")]
     public bool yPosition = false;
     public float max = 90f, min = 0f, speed = 5f;
-    bool valveBool = true;
-    float current, startYPosition;
+    float startYPosition;
     Quaternion rampQuat;
     XRKnob knob;
 
     void Start()
     {
         if (isValve)
-        {
             knob = GetComponent<XRKnob>();
-        }
+
         if (RampObject == null)
             return;
 
@@ -53,22 +51,16 @@ public class AN_Button : MonoBehaviour
         if (isValve && !isGripped)
         {
             if (!isOpened && knob.value > 0)
-            {
                 knob.value -= ValveSpeed * Time.deltaTime;
-            }
             if (isOpened && knob.value < 1)
-            {
                 knob.value += ValveSpeed * Time.deltaTime;
-            }
         }
     }
 
     public void TryAction()
     {
-        Debug.Log("test1");
         if (Locked || isValve || DoorObject == null || !DoorObject.Remote)
             return;
-        Debug.Log("test2");
         DoorObject.Action();
     }
 
@@ -78,21 +70,15 @@ public class AN_Button : MonoBehaviour
             return;
 
         if (knob.value >= 1)
-        {
             isOpened = true;
-        }
-        else if (knob.value < 0)
-        { 
-            isOpened = false; 
-        }
+
+        else if (knob.value <= 0)
+            isOpened = false;
 
         if (xRotation)
-        {
             RampObject.rotation = rampQuat * Quaternion.Euler(knob.value * max, 0f, 0f);
-        }
+
         else if (yPosition)
-        {
             RampObject.position = new Vector3(RampObject.position.x, startYPosition + knob.value * max, RampObject.position.z);
-        }
     }
 }
